@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "==0.109.2"
+uvicorn = "==0.27.1"
+gunicorn = "==21.2.0"
+pydantic = "==2.6.3"
+Faker = "==24.1.0"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"

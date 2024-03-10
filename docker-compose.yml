@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+
+  api_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  nginx:
+    build:
+      context: ./docker-configs/nginx/
+      dockerfile: Dockerfile
+    environment:
+      - NGINX_SERVER_NAME=your_domain.com
+    ports:
+      - 80:80
+      - 443:443
